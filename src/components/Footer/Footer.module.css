@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.updated {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 4rem 5rem;
+}
+.textContainer {
+  width: 50%;
+}
+.textContainer h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.textContainer p {
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+}
+.inputContainer {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputContainer input {
+  width: 80%;
+}
+.signup {
+  color: white;
+  border: 2px solid white;
+  height: 3rem;
+}
+hr {
+  width: 90%;
+  height: 0.1px;
+  background-color: white;
+  margin: 1.5rem 0;
+}
+.support {
+  margin: 2rem 0;
+  margin-bottom: 4rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.div h1 {
+  font-family: "Oswald", sans-serif;
+}
+.div p {
+  text-decoration: underline;
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.contact h1 {
+  font-family: "Oswald", sans-serif;
+}
+.contact p {
+  font-family: "Work Sans", sans-serif;
+  margin: 1rem 0;
+}
+.logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 865px) {
+  .updated {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem 5rem;
+  }
+  .textContainer {
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+  .inputContainer {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .updated {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem 5rem;
+  }
+  .textContainer {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+  .inputContainer {
+    width: 90%;
+  }
+  .inputContainer input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .updated {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem 2rem;
+  }
+  .textContainer {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+  .inputContainer {
+    width: 90%;
+  }
+  .inputContainer input {
+    width: 100%;
+  }
+}

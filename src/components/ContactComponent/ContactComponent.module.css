@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  color: black;
+  background-color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5rem 0;
+}
+.textContainer h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+}
+.textContainer p {
+  margin: 0.5rem 0;
+  font-family: "Work Sans", sans-serif;
+}
+.textContainer h2 {
+  margin-top: 5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+}
+.mapContainer {
+  height: 500px;
+  width: 50%;
+}
+.map {
+  border: none;
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%) invert(95%);
+}
+
+@media screen and (max-width: 1025px) {
+  .container {
+    margin: 2rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mapContainer {
+    margin-top: 3rem;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mapContainer {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mapContainer {
+    width: 90%;
+    height: 300px;
+  }
+  .textContainer h1 {
+    font-size: 3.5rem;
+  }
+  .textContainer h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .mapContainer {
+    height: 200px;
+  }
+  .textContainer h1 {
+    font-size: 2.5rem;
+  }
+  .textContainer h2 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: "Oswald", sans-serif; */
+/* font-family: "Work Sans", sans-serif; */
+.container {
+  background-color: white;
+  color: black;
+  padding-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .path {
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  width: 89%;
+}
+.path a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+.container span {
+  margin: 0 1rem;
+  font-size: 0.8rem;
+}
+.detailContainer {
+  width: 60%;
+}
+.detailContainer h1,
+.detailContainer h2,
+.detailContainer h4 {
+  font-family: "Oswald", sans-serif;
+  margin: 0.5rem 0;
+}
+.detailContainer h1 {
+  font-size: 4rem;
+}
+.detailContainer h2 {
+  font-size: 2.5rem;
+}
+.detailContainer h4 {
+  font-size: 1.5rem;
+}
+.proContainer {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+.imgContainer {
+  max-width: 35rem;
+  width: 30%;
+  min-width: 20rem;
+}
+.imgContainer img {
+  width: 100%;
+}
+.para {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+}
+.subscribe {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .detailContainer h1 {
+    font-size: 3rem;
+  }
+  .detailContainer h2 {
+    font-size: 2rem;
+  }
+  .detailContainer h4 {
+    font-size: 1.5rem;
+  }
+  .para {
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .paraBtn {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .subscribe {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .proContainer {
+    flex-direction: column-reverse;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .detailContainer {
+    width: 80%;
+  }
+  .detailContainer h1 {
+    font-size: 4rem;
+  }
+  .detailContainer h2 {
+    font-size: 2.5rem;
+  }
+  .detailContainer h4 {
+    font-size: 1.5rem;
+  }
+  .para {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .detailContainer h1 {
+    font-size: 2rem;
+  }
+  .detailContainer h2 {
+    font-size: 1rem;
+  }
+  .detailContainer h4 {
+    font-size: 0.8rem;
+  }
+  .para {
+    font-size: 0.8rem;
+  }
+  .imgContainer {
+    max-width: 35rem;
+    width: 30%;
+    min-width: 15rem;
+  }
+  .container .path {
+    margin-top: -2.5rem;
+    font-size: 0.8rem;
+    width: 89%;
+  }
+}

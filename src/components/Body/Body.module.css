@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.container1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+.container1 h2,
+.container1 p {
+  margin: 5rem 5rem;
+}
+.container1 h2 {
+  width: 60%;
+  font-size: 3.5rem;
+  font-family: "Oswald", sans-serif;
+}
+.container1 p {
+  width: 38%;
+  margin-top: 5.8rem;
+  font-size: 1.5rem;
+  font-family: "Work Sans", sans-serif;
+}
+.mainContainer {
+  background-color: black;
+}
+.imgContainer {
+  margin: 5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.img1,
+.img2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 100%;
+}
+.img1 {
+  margin-top: 8rem;
+  z-index: 0;
+}
+.img2 {
+  z-index: 1;
+  margin-left: -4rem;
+}
+.container3 {
+  margin: 3rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container3 h2 {
+  color: white;
+  font-size: 4rem;
+  font-family: "Oswald", sans-serif;
+}
+.container3 p {
+  width: 55%;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.features {
+  margin: 4rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.features span {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 4rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.features span p {
+  width: 15rem;
+  font-size: 15px;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .container1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .container1 h2,
+  .container1 p {
+    margin: 3rem 0 2rem 0;
+  }
+  .container1 p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 737px) {
+  .features {
+    flex-direction: column;
+  }
+  .features span {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 485px) {
+  .features span {
+    margin: 2rem 1rem;
+  }
+  .features {
+    flex-direction: column;
+    margin: 2rem 2.5rem;
+  }
+
+  .container1 h2 {
+    font-size: 2rem;
+  }
+  .container1 p {
+    font-size: 1rem;
+  }
+  .container3 h2 {
+    font-size: 2.5rem;
+  }
+  .container3 p {
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 90%;
+  }
+}

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.hamMenu {
+  display: none;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.433);
+  width: 100%;
+  color: white;
+  display: flex;
+  top: 0;
+  left: 0;
+  margin: 1rem 0;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  z-index: 1000;
+}
+.navContainer {
+  margin-right: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+}
+.logo {
+  margin-left: 2.5rem;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+.list {
+  font-family: "Work Sans", sans-serif;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+.list li {
+  margin: 0 0.5rem;
+}
+.link {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1025px) {
+  .hamMenu {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .navContainer {
+    flex-direction: column-reverse;
+  }
+  .list {
+    background-color: rgba(0, 0, 0, 0.696);
+    position: absolute;
+    padding: 0;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    border-radius: 8px;
+    box-shadow: 0 0 1rem 0.5px rgba(0, 0, 0, 0.363);
+    width: 10rem;
+    height: 15rem;
+    top: 120%;
+    right: 4%;
+  }
+  .list li {
+    margin: 1.5rem 0;
+  }
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 392px) {
+  .logo {
+    font-size: 2rem;
+  }
+  .container {
+    margin: 1rem 0;
+    align-items: center;
+    /* justify-content: center; */
+  }
+}

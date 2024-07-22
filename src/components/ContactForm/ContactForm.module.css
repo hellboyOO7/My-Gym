@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  background-color: white;
+  color: black;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 3rem 0;
+}
+.textContainer {
+  margin: 2rem 0;
+  width: 30%;
+}
+.formContainer {
+  font-family: "Work Sans", sans-serif;
+  margin: 2rem 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.nameArea {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  width: 49.5%;
+}
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.date {
+  width: 10rem;
+  font-family: "Work Sans", sans-serif;
+}
+input {
+  font-size: 1rem;
+  padding: 0 10px;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+.required {
+  color: rgb(91, 91, 91);
+}
+.textContainer h1 {
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.textContainer p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+button {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 5rem;
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 1131px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .textContainer {
+    text-align: center;
+    width: 90%;
+  }
+  .formContainer {
+    width: 90%;
+  }
+}
