@@ -16,7 +16,7 @@
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background-image: url("HomePage/drive-banner.jpg");
+  background-image: url("/HomePage/drive-banner.jpg");
   filter: brightness(90%);
   display: flex;
   justify-content: space-between;
