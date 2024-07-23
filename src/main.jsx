@@ -8,6 +8,8 @@ import Schedule from "./pages/Schedule/Schedule.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Store from "./pages/Store/Store.jsx";
 import MainBody from "./components/MainBody/MainBody.jsx";
+import Instructor from "./components/Instructor/Instructor.jsx";
+import Pricing from "./components/Pricing/Pricing.jsx";
 
 let router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ let router = createBrowserRouter([
       {
         path: "/store",
         element: <Store />,
+      },
+      {
+        path: "/instructor",
+        element: <Instructor />,
+      },
+      {
+        path: "/pricing",
+        element: <Pricing />,
       },
     ],
   },

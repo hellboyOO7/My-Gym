@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+  color: black;
+  background-color: white;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container hr {
+  margin: 5rem 0;
+}
+.innerContainer {
+  width: 100%;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.innerContainer p,
+li {
+  font-family: "Work Sans", sans-serif;
+}
+.priceContainer {
+  width: 30%;
+}
+.priceContainer h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 7rem;
+}
+.priceContainer p {
+  margin: 1rem 0;
+}
+.detailContainer {
+  width: 45%;
+}
+.detailContainer p,
+.detailContainer ul {
+  font-size: 1.5rem;
+}
+.detailContainer ul {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1100px) {
+  .detailContainer p,
+  .detailContainer ul {
+    font-size: 1rem;
+  }
+  .priceContainer h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .innerContainer {
+    flex-direction: column;
+  }
+  .priceContainer {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+  }
+  .detailContainer {
+    width: 80%;
+  }
+  .container hr {
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 393px) {
+  .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .detailContainer p,
+  .detailContainer ul {
+    font-size: 0.8rem;
+  }
+  .priceContainer h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+  }
+  .container hr {
+    margin: 0.5rem 0;
+  }
+}

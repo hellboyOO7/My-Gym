@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: "Oswald", sans-serif; */
+/* font-family: "Work Sans", sans-serif; */
+.container {
+  background-color: white;
+  color: black;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0.5rem;
+  width: 30%;
+  height: auto;
+}
+.textContainer {
+  position: absolute;
+  top: 60%;
+  color: white;
+  text-align: center;
+}
+.textContainer h1 {
+  font-size: 100%;
+  font-family: "Oswald", sans-serif;
+}
+.textContainer p {
+  font-size: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 480px) {
+  .imgContainer {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 393px) {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .imgContainer {
+    width: 90%;
+  }
+}
